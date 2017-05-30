@@ -1,20 +1,20 @@
 // JavaScript Document
 
 $(document).ready(function(){
-	$("#menu-main-menu, .nivo-controlNav, .entry-content").addClass("clearfix");	
+	$("#menu-main-menu, .nivo-controlNav, .entry-content").addClass("clearfix");
 	$(".widget_twitter li span").removeClass("entry-content");
 	$("#slider p br").remove();
 	if(jQuery.support.cssFloat){$(".entry-content").hide();}
 	$(".category-documentaries:nth-child(even)").css({'clear':'both'});
 	//$(".entry-content p img").before("&nbsp;&nbsp;&nbsp;");
 	$(".bmk_footer_item:last").css("margin-right","0");
-	
+
 	//alert(jQuery.support.cssFloat);
-	
+
 	//$(".trailer_launch").colorbox({width:"700", height:"470", iframe:true});
-	
+
 	$(".ni_col_last").next(".ni_3_col1").css("clear","both");
-	
+
 	$(".img_vimeo").parent().each(function(){
 		var vimeo = $(this).children('.img_vimeo').attr("data-vimeo");
 		var img = $(this).children('.img_vimeo');
@@ -25,12 +25,12 @@ $(document).ready(function(){
 			img.replaceWith('<iframe src="https://player.vimeo.com/video/'+vimeo+'?color=c9ff23&title=0&byline=0&portrait=0" width="410" height="231" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 		});
 	});
-	
+
 	$(".fer nav a").click(function(e){
 		e.preventDefault();
-		$('html,body').scrollTo(this.hash,this.hash); 
+		$('html,body').scrollTo(this.hash,this.hash);
 	});
-	
+
 });
 
 
@@ -60,14 +60,14 @@ $(window).load(function() {
 		afterChange: function(){},
 		slideshowEnd: function(){} //Triggers after all slides have been shown
 	});
-	
+
 	$("#slider").animate({opacity:1},1000); //fade in
-	
+
 	*/
-	
+
 	if(jQuery.support.cssFloat){$(".entry-content").show(175);}
-	
-	
+
+
 });
 
 /*
